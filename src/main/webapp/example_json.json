@@ -1,0 +1,44 @@
+
+{
+    "timeline":
+    {
+        "headline":"30 Technologies in 30 Days -- By Shekhar Gulati",
+        "type":"default",
+		"text":"Learn 30 Technologies in 30 Days",
+		"startDate":"2013,10,29",
+        "date": [
+            {
+                "startDate":"2013,10,29",
+                "headline":"Day 1: Bower—Manage Your Client Side Dependencies",
+                "text":"<p>The first day talks about Bower and how you can use it.</p>",
+                "asset":
+                {
+                    "media":"https://www.openshift.com/sites/default/files/bower-logo.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2013,10,30",
+				"headline":"Day 2: AngularJS--Getting My Head Around AngularJS",
+                "text":"<p>Yesterday I kicked off a challenge where in I will learn a new technology every day for a month. In the first post of this month long series, I talked about Bower -- package manager for client side assets. You can read the blog here.  You can read the reddit discussion here.</p>",
+                "asset":
+                {
+                    "media":"https://www.openshift.com/sites/default/files/angularjs-large.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+
+            {
+                "startDate":"2013,10,31",
+                "headline":"Day 3: Flask--Instant Python Web Development with Python and OpenShift",
+                "text":"<p>Pactpub recently contacted me to review their recently published book on Flask, which is a popular Python framework. The book is titled Instant Flask Web Development and is written by Ron DuPlain.</p>",
+                "asset":
+                {
+                    "media":"https://www.openshift.com/sites/default/files/flask-framework.jpeg"
+                }
+            }
+        ]
+    }
+}
