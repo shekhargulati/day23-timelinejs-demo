@@ -18,11 +18,10 @@
     </style>
     <!-- HTML5 shim, for IE6-8 support of HTML elements--><!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  </head>
-  <body>
-      <!-- BEGIN Timeline Embed -->
-      <div id="timeline"></div>
-      <script>
+    
+    <script type="text/javascript" src="lib/jquery-min.js"></script>
+    <script type="text/javascript" src="js/storyjs-embed.js"></script>
+    <script>
       $(document).ready(function() {
         $.get('/api/v1/stories',function(result){
           console.log(JSON.stringify(result));
@@ -38,7 +37,11 @@
         });
       });    
     </script>
-      <script type="text/javascript" src="js/storyjs-embed.js"></script>
-      <!-- END Timeline Embed-->
-  </body>
+      
+    
+  </head>
+  <body>
+      <!-- BEGIN Timeline Embed -->
+      <div id="timeline"></div>
+        </body>
 </html>
