@@ -24,7 +24,6 @@
     <script>
       $(document).ready(function() {
         $.get('/api/v1/stories',function(result){
-          console.log(JSON.stringify(result));
             createStoryJS({
                 type:   'timeline',
                 width:    '100%',
