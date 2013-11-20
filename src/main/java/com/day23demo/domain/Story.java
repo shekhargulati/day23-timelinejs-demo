@@ -33,12 +33,13 @@ public class Story {
     public String getUrl() {
         return url;
     }
-    
+
     public String getHeadline() {
         return headline;
     }
 
     public String getText() {
+        text = "<p>" + text + ". Read the full blog <a href='" + this.url + "' target='_blank'>here</a></p>";
         return text;
     }
 
