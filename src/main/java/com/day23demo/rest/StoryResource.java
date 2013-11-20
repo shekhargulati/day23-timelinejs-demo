@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.client.RestTemplate;
 
 import com.day23demo.domain.Asset;
+import com.day23demo.domain.Result;
 import com.day23demo.domain.Story;
 import com.day23demo.domain.StoryVo;
 import com.day23demo.domain.Timeline;
@@ -40,10 +41,11 @@ public class StoryResource {
 
     @RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    public Timeline timeline() {
+    public Result timeline() {
         List<Story> stories = storyRepository.findAll();
-        return new Timeline("30 Technologies in 30 Days -- By Shekhar Gulati", "Learn 30 Technologies in 30 Days",
+        Timeline timeline = new Timeline("30 Technologies in 30 Days -- By Shekhar Gulati", "Learn 30 Technologies in 30 Days",
                 "2013,10,29", stories);
+        return new Result(timeline);
     }
 
 
